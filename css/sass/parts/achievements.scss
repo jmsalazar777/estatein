@@ -1,0 +1,24 @@
+.achievements {
+	padding-top: 110px;
+
+	.heading-text {
+		padding-bottom: 80px;
+	}
+
+	.item-wrapper {
+		gap: 40px;
+
+		.item {
+			padding: 50px;
+			border-radius: 12px;
+			border: 1px solid #262626;
+			box-shadow: 0 0 0 8px #191919;
+			width: 33%;
+
+			h3 {
+				font-size: 30px;
+				padding-bottom: 30px;
+			}
+		}
+	}
+}

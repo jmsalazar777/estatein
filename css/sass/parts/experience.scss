@@ -1,0 +1,42 @@
+.experience {
+	padding-top: 110px;
+
+	.heading-text {
+		padding-bottom: 80px;
+	}
+
+	.item-wrapper {
+		row-gap: 50px;
+		column-gap: 30px;
+
+		.item {
+			width: 32%;
+
+			.item-heading {
+				padding: 16px 20px;
+				border-left: 1px solid #703bf7;
+
+				h4 {
+					font-size: 20px;
+					font-weight: 500;
+					line-height: 150%;
+				}
+			}
+
+			.content-wrapper {
+				padding: 50px;
+				background: url("../images/experiencebg.png") no-repeat top left;
+				background-size: 100% 100%;
+
+				h3 {
+					font-size: 26px;
+					padding-bottom: 20px;
+				}
+
+				p {
+					min-height: 108px;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,17 @@
+.dream-property {
+	padding: 150px 0 160px;
+	background: linear-gradient(
+		-64deg,
+		transparent 0,
+		transparent 53%,
+		#262626 100%
+	);
+
+	h2 {
+		padding-top: 0;
+
+		&::before {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,156 @@
+.icons {
+	padding: 20px;
+	background: #141414;
+	border: 2px solid #262626;
+	box-shadow: 0 0 0 4px #191919;
+
+	.container {
+		max-width: 100%;
+		padding: 0;
+	}
+
+	.item-wrapper {
+		gap: 20px;
+
+		a {
+			width: 100%;
+		}
+
+		.item {
+			width: 100%;
+			border-radius: 12px;
+			background: #1a1a1a;
+			border: 1px solid #262626;
+			position: relative;
+			padding: 40px 20px;
+
+			p {
+				font-size: 20px;
+				color: #fff;
+				font-weight: 600;
+				text-align: center;
+			}
+
+			.image-wrapper {
+				background: url("../images/iconbg.png") no-repeat center;
+				background-size: 100% 100%;
+				border-radius: 50%;
+				width: 82px;
+				height: 82px;
+				margin-bottom: 20px;
+			}
+
+			&::after {
+				content: "";
+				background: url("../images/arrow-top.png") no-repeat center;
+				width: 21.25px;
+				height: 21.25px;
+				position: absolute;
+				top: 26.37px;
+				right: 26.37px;
+				background-size: 100% 100%;
+
+				@media screen and (max-width: 991px) {
+					width: 16px;
+					height: 16px;
+					top: 20px;
+					right: 20px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		padding: 10px;
+
+		.item-wrapper {
+			gap: 10px;
+
+			.item {
+				padding: 30px 16px;
+
+				p {
+					font-size: 16px;
+				}
+
+				.image-wrapper {
+					width: 60px;
+					height: 60px;
+					margin-bottom: 16px;
+
+					img {
+						width: 33%;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1301px) {
+		.item-wrapper {
+			.item {
+				p {
+					min-height: 48px;
+				}
+
+				.image-wrapper {
+					width: 48px;
+					height: 48px;
+					margin-bottom: 16px;
+
+					img {
+						width: 33%;
+						margin: 0 auto;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		margin: 0 16px;
+		border-radius: 10px;
+
+		.item-wrapper {
+			flex-wrap: wrap;
+			justify-content: space-between;
+
+			a {
+				width: 49%;
+
+				.item {
+					padding: 20px 14px;
+					p {
+						min-height: 48px;
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 554px) {
+		.item-wrapper {
+			a {
+				width: 48.5%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 425px) {
+		.item-wrapper {
+			a {
+				width: 48%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 320px) {
+		.item-wrapper {
+			a {
+				width: 100%;
+			}
+		}
+	}
+}
