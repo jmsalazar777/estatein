@@ -3,6 +3,14 @@
 
 	.heading-text {
 		padding-bottom: 80px;
+
+		@media screen and (max-width: 1440px) {
+			padding-bottom: 60px;
+		}
+
+		@media screen and (max-width: 991px) {
+			padding-bottom: 40px;
+		}
 	}
 
 	.swiper-slide {
@@ -43,7 +51,6 @@
 			text-align: center;
 
 			h3 {
-				font-size: 24px;
 				font-weight: 600;
 				line-height: 28px;
 				padding-bottom: 6px;
@@ -63,6 +70,76 @@
 					background: #703bf7;
 					width: 44px;
 					height: 44px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 1440px) {
+			padding: 24px;
+
+			.image-wrapper {
+				img {
+					height: 220px;
+				}
+			}
+
+			.twitter {
+				width: 60px;
+				height: 40px;
+				margin: -21px auto 24px;
+			}
+
+			.content-wrapper {
+				padding-bottom: 20px;
+
+				h3 {
+					padding-bottom: 4px;
+				}
+			}
+
+			.cta-wrapper {
+				.cta {
+					padding: 10px 10px 10px 20px;
+
+					div {
+						width: 36px;
+						height: 36px;
+					}
+				}
+			}
+		}
+
+		@media screen and (max-width: 991px) {
+			padding: 20px;
+
+			.image-wrapper {
+				img {
+					height: auto;
+				}
+			}
+
+			.twitter {
+				width: 60px;
+				height: 40px;
+				margin: -21px auto 24px;
+			}
+
+			.content-wrapper {
+				padding-bottom: 20px;
+
+				h3 {
+					padding-bottom: 0;
+				}
+			}
+
+			.cta-wrapper {
+				.cta {
+					padding: 8px 8px 8px 24px;
+
+					div {
+						width: 48px;
+						height: 48px;
+					}
 				}
 			}
 		}

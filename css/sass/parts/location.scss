@@ -1,11 +1,23 @@
 .location {
 	.heading-text {
 		padding-bottom: 80px;
+
+		@media screen and (max-width: 1440px) {
+			padding-bottom: 60px;
+		}
+
+		@media screen and (max-width: 991px) {
+			padding-bottom: 40px;
+		}
 	}
 
 	.tab {
 		gap: 10px;
 		margin-bottom: 50px;
+		background: #1a1a1a;
+		border-radius: 12px;
+		max-width: 516px;
+		padding: 10px;
 
 		a {
 			width: 160px;
@@ -16,6 +28,14 @@
 			&.active {
 				background: #141414;
 			}
+		}
+
+		@media screen and (max-width: 1140px) {
+			margin-bottom: 40px;
+		}
+
+		@media screen and (max-width: 991px) {
+			margin: 0 auto 30px;
 		}
 	}
 
@@ -68,6 +88,58 @@
 			a {
 				width: 100%;
 				text-align: center;
+			}
+		}
+
+		@media screen and (max-width: 1440px) {
+			.item {
+				padding: 40px;
+
+				h4 {
+					font-size: 14px;
+					padding-bottom: 6px;
+				}
+
+				h3 {
+					font-size: 24px;
+					padding-bottom: 10px;
+				}
+
+				p {
+					padding-bottom: 30px;
+				}
+
+				.item-info {
+					margin-bottom: 40px;
+
+					p {
+						font-size: 14px;
+						padding: 8px 16px;
+					}
+				}
+			}
+		}
+
+		@media screen and (max-width: 991px) {
+			flex-direction: column;
+			gap: 20px;
+
+			.item {
+				width: 100%;
+				padding: 24px;
+
+				h3 {
+					font-size: 20px;
+				}
+
+				p {
+					padding-bottom: 24px;
+				}
+
+				.item-info {
+					margin-bottom: 24px;
+					flex-wrap: wrap;
+				}
 			}
 		}
 	}

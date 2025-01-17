@@ -201,15 +201,26 @@ switch ($type) {
                 <?php endif; ?>
             },
             768: {
-                slidesPerView: 2,
+                slidesPerView: 3,
                 <?php if ($pagination_bullets) : ?>
                     pagination: {
                         dynamicMainBullets: 5,
                     },
                 <?php endif; ?>
             },
+
             1024: {
                 slidesPerView: 3,
+                spaceBetween: 20,
+                <?php if ($pagination_bullets) : ?>
+                    pagination: {
+                        dynamicBullets: false,
+                    },
+                <?php endif; ?>
+            },
+
+            1200: {
+                slidesPerView: 4,
                 spaceBetween: 20,
                 <?php if ($pagination_bullets) : ?>
                     pagination: {

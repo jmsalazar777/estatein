@@ -3,6 +3,14 @@
 
 	.heading-text {
 		padding-bottom: 80px;
+
+		@media screen and (max-width: 1440px) {
+			padding-bottom: 60px;
+		}
+
+		@media screen and (max-width: 991px) {
+			padding-bottom: 40px;
+		}
 	}
 
 	.item-wrapper {
@@ -10,7 +18,7 @@
 		column-gap: 30px;
 
 		.item {
-			width: 32%;
+			width: 31.5%;
 
 			.item-heading {
 				padding: 16px 20px;
@@ -35,6 +43,70 @@
 
 				p {
 					min-height: 108px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		.item-wrapper {
+			row-gap: 40px;
+			column-gap: 20px;
+
+			.item {
+				width: 32%;
+
+				.item-heading {
+					padding: 14px 16px;
+
+					h4 {
+						font-size: 16px;
+					}
+				}
+
+				.content-wrapper {
+					padding: 40px;
+
+					h3 {
+						font-size: 20px;
+						padding-bottom: 16px;
+					}
+
+					p {
+						min-height: 96px;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		.item-wrapper {
+			.item {
+				width: 48%;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.item-wrapper {
+			gap: 30px;
+
+			.item {
+				width: 100%;
+
+				.content-wrapper {
+					padding: 30px;
+
+					h3 {
+						font-size: 18px;
+						padding-bottom: 16px;
+					}
+
+					p {
+						font-size: 14px;
+						min-height: auto;
+					}
 				}
 			}
 		}

@@ -2,8 +2,29 @@
 	padding-top: 110px;
 	padding-bottom: 150px;
 
+	@media screen and (max-width: 1440px) {
+		padding-top: 90px;
+		padding-bottom: 120px;
+	}
+
+	@media screen and (max-width: 991px) {
+		padding-top: 61px;
+		padding-bottom: 80px;
+	}
+
+	.swiper-container {
+		padding: 10px;
+	}
 	.heading-text {
 		padding-bottom: 80px;
+
+		@media screen and (max-width: 1440px) {
+			padding-bottom: 60px;
+		}
+
+		@media screen and (max-width: 991px) {
+			padding-bottom: 40px;
+		}
 	}
 
 	.swiper-slide {
@@ -12,7 +33,6 @@
 		box-shadow: 0 0 0 8px #191919;
 		padding: 50px;
 		box-sizing: border-box;
-
 		.content-heading {
 			padding-bottom: 40px;
 
@@ -73,6 +93,73 @@
 
 			p {
 				color: #fff;
+			}
+		}
+
+		@media screen and (max-width: 1440px) {
+			padding: 40px;
+
+			.content-heading {
+				h3 {
+					font-size: 24px;
+				}
+			}
+
+			.content-middle {
+				padding-bottom: 30px;
+
+				h4 {
+					font-size: 16px;
+				}
+
+				.domain {
+					h3 {
+						font-size: 14px;
+					}
+				}
+			}
+
+			.content-bottom {
+				padding: 24px;
+
+				h4 {
+					font-size: 16px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 991px) {
+			padding: 24px;
+
+			.content-heading {
+				flex-direction: column;
+				gap: 20px;
+				padding-bottom: 30px;
+
+				& > div {
+					width: 100%;
+				}
+			}
+
+			.content-middle {
+				.category {
+					p {
+						font-size: 12px;
+					}
+
+					h3 {
+						font-size: 14px;
+					}
+				}
+			}
+
+			.content-bottom {
+				padding: 20px;
+
+				p,
+				h4 {
+					font-size: 14px;
+				}
 			}
 		}
 	}

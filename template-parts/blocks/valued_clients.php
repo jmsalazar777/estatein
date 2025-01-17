@@ -155,7 +155,7 @@ $navigation_buttons = get_sub_field('navigation_buttons');
             },
             1024: {
                 slidesPerView: <?= $number_of_visible_items ?>,
-                spaceBetween: 20,
+                spaceBetween: 40,
                 <?php if ($pagination_bullets) : ?>
                     pagination: {
                         dynamicBullets: false,

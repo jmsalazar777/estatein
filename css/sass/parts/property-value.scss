@@ -1,21 +1,32 @@
 .property-value {
 	padding: 110px 0 0;
 
+	@media screen and (max-width: 1440px) {
+		padding: 90px 0 0;
+	}
+
 	.heading-text {
 		padding-bottom: 80px;
+
+		@media screen and (max-width: 1440px) {
+			padding-bottom: 60px;
+		}
+
+		@media screen and (max-width: 991px) {
+			padding-bottom: 40px;
+		}
 	}
 
 	.items-wrapper {
 		gap: 30px;
 
 		.item {
-			width: 32%;
+			width: 31.5%;
 			border-radius: 12px;
 			border: 1px solid #262626;
 			padding: 50px;
 
 			h3 {
-				font-size: 24px;
 				font-weight: 600;
 				color: #fff;
 			}
@@ -35,7 +46,7 @@
 		}
 
 		.unlock {
-			width: 66%;
+			width: 65.5% !important;
 			background: url("../images/unlockbg.png") no-repeat;
 			background-size: 100% 100%;
 
@@ -51,6 +62,63 @@
 
 			.content-top {
 				margin-bottom: 30px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		.items-wrapper {
+			gap: 20px;
+			.unlock {
+				.content-top {
+					margin-bottom: 20px;
+				}
+
+				h3 {
+					font-size: 24px;
+				}
+			}
+
+			.item {
+				padding: 40px;
+				width: 32%;
+
+				.image-wrapper {
+					margin-bottom: 20px;
+					div {
+						width: 60px;
+						height: 60px;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1024px) {
+		.items-wrapper {
+			.item {
+				width: 48.9%;
+			}
+
+			.unlock {
+				width: 100% !important;
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		.items-wrapper {
+			.item {
+				width: 100%;
+				padding: 24px;
+			}
+
+			.unlock {
+				.content-top {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 20px;
+				}
 			}
 		}
 	}

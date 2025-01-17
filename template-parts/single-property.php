@@ -60,13 +60,11 @@ $area = get_field('area', $post->ID);
             <section class="gallery-wrapper gallery-images">
                 <div class="swiper thumbnail-gallery swiper-container">
                     <div class="swiper-wrapper">
-                        <?php if ($image): ?>
+                        <?php if ($images): ?>
                             <?php foreach ($images as $image): ?>
-                                <?php if (!empty($image['image'])): ?>
-                                    <div class="swiper-slide">
-                                        <img src="<?= $image['image']['url']; ?>" alt="<?= $image['image']['title']; ?>">
-                                    </div>
-                                <?php endif; ?>
+                                <div class="swiper-slide">
+                                    <img src="<?= $image['image']['url']; ?>" alt="<?= $image['image']['title']; ?>">
+                                </div>
                             <?php endforeach; ?>
                         <?php endif; ?>
                     </div>
@@ -148,100 +146,3 @@ $area = get_field('area', $post->ID);
         <?php estatein_entry_footer(); ?>
     </footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
-
-
-<script>
-    var thumbnailGallery = new Swiper('.thumbnail-gallery', {
-        slidesPerView: 9,
-        spaceBetween: 20,
-        watchSlidesProgress: true,
-
-        breakpoints: {
-            0: {
-                slidesPerView: 2,
-                pagination: {
-                    dynamicMainBullets: 1,
-                },
-            },
-            550: {
-                slidesPerView: 2,
-                pagination: {
-                    dynamicMainBullets: 3,
-                },
-            },
-            768: {
-                slidesPerView: 3,
-                pagination: {
-                    dynamicMainBullets: 5,
-                },
-            },
-            1024: {
-                slidesPerView: 8,
-                spaceBetween: 20,
-                pagination: {
-                    dynamicBullets: false,
-                },
-            },
-
-            1441: {
-                slidesPerView: 9,
-                spaceBetween: 30,
-                pagination: {
-                    dynamicBullets: false,
-                },
-            }
-        }
-    });
-
-    var mainGallery = new Swiper('.main-gallery', {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.gallery-images .swiper-button-next',
-            prevEl: '.gallery-images .swiper-button-prev',
-        },
-        thumbs: {
-            swiper: thumbnailGallery,
-        },
-        pagination: {
-            el: '.swiper-pagination',
-            dynamicBullets: true,
-            dynamicMainBullets: 4,
-        },
-        breakpoints: {
-            0: {
-                slidesPerView: 1,
-                pagination: {
-                    dynamicMainBullets: 1,
-                },
-            },
-            550: {
-                slidesPerView: 1,
-                pagination: {
-                    dynamicMainBullets: 3,
-                },
-            },
-            768: {
-                slidesPerView: 2,
-                pagination: {
-                    dynamicMainBullets: 5,
-                },
-            },
-            1024: {
-                slidesPerView: 2,
-                spaceBetween: 20,
-                pagination: {
-                    dynamicBullets: false,
-                },
-            },
-
-            1441: {
-                slidesPerView: 2,
-                spaceBetween: 30,
-                pagination: {
-                    dynamicBullets: false,
-                },
-            }
-        }
-    });
-</script>

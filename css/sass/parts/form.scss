@@ -1,8 +1,24 @@
 .form {
 	padding-bottom: 150px;
 
+	@media screen and (max-width: 1440px) {
+		padding-bottom: 120px;
+	}
+
+	@media screen and (max-width: 991px) {
+		padding-bottom: 61px;
+	}
+
 	.heading-text {
 		padding-bottom: 80px;
+
+		@media screen and (max-width: 1440px) {
+			padding-bottom: 60px;
+		}
+
+		@media screen and (max-width: 991px) {
+			padding-bottom: 40px;
+		}
 	}
 
 	.content-wrapper {
@@ -26,6 +42,10 @@
 				color: #666666;
 				font-size: 18px;
 				font-weight: 500;
+			}
+
+			@media screen and (max-width: 1440px) {
+				height: 127px;
 			}
 		}
 		.form-wrapper {
@@ -54,10 +74,15 @@
 						font-size: 18px;
 						font-weight: 500;
 					}
+
+					@media screen and (max-width: 1440px) {
+						font-size: 14px;
+					}
 				}
 
 				label {
 					width: 25%;
+					color: #fff;
 				}
 			}
 		}
@@ -171,6 +196,93 @@
 				}
 			}
 		}
+
+		@media screen and (max-width: 1440px) {
+			padding: 50px;
+
+			.form-wrapper {
+				margin-bottom: 30px;
+				gap: 30px !important;
+				p {
+					gap: 30px;
+
+					input,
+					select {
+						padding: 16px 20px;
+					}
+				}
+			}
+		}
+
+		@media screen and (max-width: 991px) {
+			padding: 20px;
+
+			.form-wrapper {
+				margin-bottom: 30px;
+
+				p {
+					gap: 30px;
+					flex-wrap: wrap;
+
+					label {
+						width: 47%;
+					}
+				}
+			}
+
+			.form-wrapper-2 {
+				flex-direction: column;
+				gap: 30px;
+
+				p {
+					width: 100%;
+
+					label {
+						width: 100%;
+					}
+				}
+			}
+
+			.cta-wrapper {
+				margin-top: 30px;
+
+				p {
+					flex-direction: column;
+					align-items: flex-start;
+					gap: 20px;
+				}
+			}
+		}
+
+		@media screen and (max-width: 767px) {
+			padding: 20px;
+
+			.form-wrapper {
+				margin-bottom: 30px;
+
+				p {
+					gap: 30px;
+					flex-wrap: wrap;
+
+					label {
+						width: 100%;
+					}
+				}
+			}
+
+			.form-wrapper-2 {
+				flex-direction: column;
+				gap: 30px;
+
+				p {
+					width: 100%;
+
+					label {
+						width: 100%;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -219,6 +331,97 @@
 
 				label {
 					width: 49%;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1440px) {
+		padding-top: 90px;
+
+		.row {
+			gap: 80px;
+
+			.heading-text {
+				width: 100%;
+				max-width: 519px;
+			}
+
+			.content-wrapper {
+				padding: 40px;
+			}
+
+			p {
+				color: #fff;
+			}
+
+			.form-wrapper {
+				margin-bottom: 30px;
+
+				p {
+					gap: 30px;
+
+					label {
+						width: 48%;
+					}
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 1250px) {
+		.row {
+			flex-direction: column;
+			gap: 40px;
+
+			.heading-text {
+				width: 100%;
+				max-width: 100%;
+				padding-bottom: 0;
+			}
+		}
+	}
+
+	@media screen and (max-width: 991px) {
+		.row {
+			.form {
+				width: 100%;
+			}
+
+			.content-wrapper {
+				padding: 20px;
+			}
+
+			.form-wrapper {
+				gap: 20px;
+
+				p {
+					gap: 20px;
+				}
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px) {
+		.row {
+			.form {
+				width: 100%;
+			}
+
+			.content-wrapper {
+				padding: 20px;
+			}
+
+			.form-wrapper {
+				gap: 20px;
+
+				p {
+					gap: 20px;
+					flex-direction: column;
+
+					label {
+						width: 100%;
+					}
 				}
 			}
 		}

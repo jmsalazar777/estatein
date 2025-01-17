@@ -9,12 +9,21 @@
 		max-width: 1600px;
 		background-size: 100% 100%;
 
+		@media screen and (max-width: 1440px) {
+			padding: 60px;
+		}
+
+		@media screen and (max-width: 991px) {
+			padding: 24px;
+		}
+
 		.images-wrapper {
 			gap: 20px;
 			margin-bottom: 20px;
 
 			.item {
 				line-height: 0;
+				width: 49.3%;
 
 				img {
 					height: 236px;
@@ -27,7 +36,76 @@
 				&:nth-of-type(4),
 				&:nth-of-type(5) {
 					max-width: 344.25px;
+					width: 24%;
 				}
+
+				@media screen and (max-width: 1600px) {
+					width: 49%;
+
+					&:nth-of-type(4),
+					&:nth-of-type(5) {
+						width: 23.5%;
+					}
+
+					img {
+						height: 191.5px;
+					}
+				}
+
+				@media screen and (max-width: 1118px) {
+					width: 48.8%;
+
+					&:nth-of-type(4),
+					&:nth-of-type(5) {
+						width: 23%;
+					}
+				}
+
+				@media screen and (max-width: 991px) {
+					width: 49%;
+
+					&:nth-of-type(4),
+					&:nth-of-type(5) {
+						width: 23.9%;
+					}
+				}
+
+				@media screen and (max-width: 671px) {
+					&:nth-of-type(4),
+					&:nth-of-type(5) {
+						width: 23.5%;
+					}
+				}
+
+				@media screen and (max-width: 600px) {
+					width: 48.5%;
+
+					&:nth-of-type(4),
+					&:nth-of-type(5) {
+						width: 23.5%;
+					}
+
+					img {
+						height: 71.5px;
+					}
+				}
+
+				@media screen and (max-width: 500px) {
+					width: 47%;
+
+					&:nth-of-type(4),
+					&:nth-of-type(5) {
+						width: 22%;
+					}
+				}
+			}
+
+			@media screen and (max-width: 1440px) {
+				gap: 20px;
+			}
+
+			@media screen and (max-width: 991px) {
+				gap: 10px;
 			}
 		}
 
@@ -39,6 +117,11 @@
 				max-width: 708.5px;
 			}
 
+			@media screen and (max-width: 767px) {
+				flex-direction: column;
+				gap: 20px;
+			}
+
 			.image-wrapper {
 				line-height: 0;
 
@@ -46,6 +129,16 @@
 					height: 280px;
 					object-fit: cover;
 					border-radius: 12px;
+
+					@media screen and (max-width: 1440px) {
+						height: 220px;
+						width: 100%;
+						object-fit: cover;
+					}
+
+					@media screen and (max-width: 600px) {
+						height: 135px;
+					}
 				}
 			}
 
