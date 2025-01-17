@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-	color: #ffffff;
+	color: #703bf7 !important;
 }
 
 .entry-header {
@@ -67,7 +67,7 @@ h2 {
 		height: 30px;
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: -20px;
 	}
 
 	@media screen and (max-width: 1440px) {
@@ -207,6 +207,7 @@ p {
 
 		&:hover {
 			background: #703bf7;
+			color: #ffffff !important;
 		}
 	}
 
@@ -263,7 +264,7 @@ p {
 		color: #fff;
 		-webkit-transform: scale(1.1);
 		transform: scale(1.1);
-		border: 1px solid #fff;
+		border: 1px solid #703bf7;
 	}
 
 	&:before {

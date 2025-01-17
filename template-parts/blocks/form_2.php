@@ -7,9 +7,9 @@ $content = get_sub_field('content');
 $form_shortcode = get_sub_field('form_shortcode');
 ?>
 
-<section id="<?= $section_id; ?>" class="form">
+<section id="<?= $section_id; ?>" class="form form-2">
     <div class="container">
-        <div class="row">
+        <div class="row flex align-items-start justify-content-between">
             <div class="heading-text">
                 <?php if ($title): ?>
                     <h2><?= $title ?></h2>
@@ -18,11 +18,13 @@ $form_shortcode = get_sub_field('form_shortcode');
                     <p><?= $content ?></p>
                 <?php endif; ?>
             </div>
-            <?php if ($form_shortcode): ?>
-                <div class="content-wrapper">
-                    <?= do_shortcode($form_shortcode); ?>
-                </div>
-            <?php endif; ?>
+            <div class="form">
+                <?php if ($form_shortcode): ?>
+                    <div class="content-wrapper">
+                        <?= do_shortcode($form_shortcode); ?>
+                    </div>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </section>

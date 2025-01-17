@@ -1,0 +1,57 @@
+.explore {
+	padding: 150px 0;
+
+	.container {
+		padding: 80px;
+		background: url("../images/gallerybg.png") no-repeat;
+		border-radius: 12px;
+		box-sizing: border-box;
+		max-width: 1600px;
+		background-size: 100% 100%;
+
+		.images-wrapper {
+			gap: 20px;
+			margin-bottom: 20px;
+
+			.item {
+				line-height: 0;
+
+				img {
+					height: 236px;
+					object-fit: cover;
+					border-radius: 12px;
+					width: 100%;
+					max-width: 708.5px;
+				}
+
+				&:nth-of-type(4),
+				&:nth-of-type(5) {
+					max-width: 344.25px;
+				}
+			}
+		}
+
+		.heading-text {
+			gap: 20px;
+
+			& > div {
+				width: 100%;
+				max-width: 708.5px;
+			}
+
+			.image-wrapper {
+				line-height: 0;
+
+				img {
+					height: 280px;
+					object-fit: cover;
+					border-radius: 12px;
+				}
+			}
+
+			p {
+				max-width: 688.5px;
+			}
+		}
+	}
+}

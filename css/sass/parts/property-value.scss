@@ -1,0 +1,57 @@
+.property-value {
+	padding: 110px 0 0;
+
+	.heading-text {
+		padding-bottom: 80px;
+	}
+
+	.items-wrapper {
+		gap: 30px;
+
+		.item {
+			width: 32%;
+			border-radius: 12px;
+			border: 1px solid #262626;
+			padding: 50px;
+
+			h3 {
+				font-size: 24px;
+				font-weight: 600;
+				color: #fff;
+			}
+
+			.image-wrapper {
+				gap: 20px;
+				margin-bottom: 30px;
+
+				div {
+					line-height: 0;
+					width: 82px;
+					height: 82px;
+					background: url("../images/iconbg.png") no-repeat;
+					background-size: 100% 100%;
+				}
+			}
+		}
+
+		.unlock {
+			width: 66%;
+			background: url("../images/unlockbg.png") no-repeat;
+			background-size: 100% 100%;
+
+			.cta {
+				border-color: #262626;
+				background: #141414;
+			}
+
+			h3 {
+				font-size: 30px;
+				font-weight: 700;
+			}
+
+			.content-top {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

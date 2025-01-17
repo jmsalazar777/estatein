@@ -5,7 +5,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Estatein
+ * @package estatein
  */
 
 ?>
@@ -29,8 +29,8 @@
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-	<?php estatein_post_thumbnail(); ?>
 
+	<?php estatein_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php

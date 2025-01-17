@@ -227,3 +227,18 @@ function theme_enqueue_scripts()
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
 
 add_filter('show_admin_bar', '__return_false');
+
+
+function add_page_name_to_body_class($classes)
+{
+	global $post;
+
+	if (!is_home() && isset($post)) {
+		$slug = $post->post_name;
+
+		$classes[] = $slug . '-page';
+	}
+
+	return $classes;
+}
+add_filter('body_class', 'add_page_name_to_body_class');

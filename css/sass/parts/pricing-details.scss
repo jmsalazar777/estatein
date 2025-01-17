@@ -1,0 +1,149 @@
+.pricing-details {
+	padding-top: 150px;
+	padding-bottom: 110px;
+
+	.note {
+		border: 1px solid #262626;
+		background: #1a1a1a;
+		border-radius: 12px;
+		padding: 30px 50px;
+		gap: 40px;
+		margin-top: 80px;
+
+		h4 {
+			font-size: 24px;
+			color: #fff;
+			line-height: 150%;
+			position: relative;
+
+			&::after {
+				content: "";
+				background: #262626;
+				width: 1px;
+				height: 36px;
+				position: absolute;
+				right: -20px;
+				top: 0;
+			}
+		}
+	}
+
+	.content-wrapper {
+		margin-top: 50px;
+		gap: 50px;
+
+		.price {
+			width: 100%;
+			max-width: 220px;
+
+			p {
+				strong {
+					display: block;
+					font-size: 40px;
+					color: #fff;
+					padding-top: 2px;
+					line-height: 150%;
+				}
+			}
+		}
+
+		.property-details {
+			width: 100%;
+			max-width: 1326px;
+
+			.property-wrapper {
+				border-radius: 12px;
+				padding: 50px 50px 10px;
+				border: 1px solid #262626;
+				margin-bottom: 40px;
+
+				&:last-of-type {
+					margin-bottom: 0;
+				}
+
+				.property-heading {
+					padding-bottom: 40px;
+					border-bottom: 1px solid #262626;
+				}
+
+				.property-content {
+					.item {
+						width: 50%;
+						padding: 40px 0;
+						border-bottom: 1px solid #262626;
+
+						h4 {
+							font-size: 18px;
+							color: #999999;
+							padding-bottom: 14px;
+						}
+
+						.flex {
+							gap: 16px;
+							min-height: 45px;
+						}
+
+						.price {
+							width: auto;
+							max-width: 100%;
+
+							p {
+								font-size: 24px;
+								color: #fff;
+							}
+						}
+
+						.text {
+							padding: 8px 14px;
+							border-radius: 50px;
+							border: 1px solid #262626;
+							background: #1a1a1a;
+						}
+
+						&:nth-of-type(2n + 1) {
+							position: relative;
+
+							&::after {
+								content: "";
+								background: #262626;
+								width: 1px;
+								height: 86px;
+								position: absolute;
+								right: 20px;
+								top: 40px;
+							}
+						}
+
+						&:nth-of-type(5) {
+							border-bottom: none;
+
+							&::after {
+								display: none;
+							}
+						}
+
+						&:nth-of-type(3):nth-last-of-type(2),
+						&:nth-of-type(4):nth-last-of-type(1) {
+							border-bottom: none;
+						}
+
+						&:nth-of-type(1):nth-last-of-type(2),
+						&:nth-of-type(2):nth-last-of-type(1) {
+							border-bottom: none;
+						}
+					}
+				}
+
+				&.monthly-costs {
+					.item {
+						width: 100%;
+
+						&::after {
+							display: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}

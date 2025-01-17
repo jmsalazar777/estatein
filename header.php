@@ -55,11 +55,11 @@ $header_button_type = get_field('header_button_type', 'options');
 						<div class="site-branding-left">
 							<?php if ($logo): ?>
 								<div class="logo">
-									<img src="<?= $logo['url'] ?>" alt="<?= $logo['alt'] ?>">
+									<a href="home"><img src="<?= $logo['url'] ?>" alt="<?= $logo['alt'] ?>"></a>
 								</div>
 							<?php else: ?>
 								<div class="site-name">
-									<?php echo get_bloginfo('name'); ?>
+									<a href="home"><?php echo get_bloginfo('name'); ?></a>
 								</div>
 							<?php endif; ?>
 						</div>

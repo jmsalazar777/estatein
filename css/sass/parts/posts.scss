@@ -1,0 +1,177 @@
+.single-property {
+	.entry-header {
+		padding: 130px 0 60px;
+		display: block;
+
+		.header-left {
+			gap: 20px;
+
+			h1 {
+				font-size: 30px;
+				font-weight: 600;
+				line-height: 150%;
+			}
+
+			p {
+				color: #fff;
+				padding: 10px;
+				border-radius: 8px;
+				border: 1px solid #262626;
+			}
+		}
+
+		.price {
+			p {
+				strong {
+					display: block;
+					font-size: 24px;
+					color: #fff;
+				}
+			}
+		}
+	}
+
+	.entry-content {
+		margin-top: 0;
+
+		& > .container {
+		}
+	}
+
+	.gallery-images {
+		padding: 50px;
+		background: #1a1a1a;
+		border-radius: 12px;
+		border: 1px solid #262626;
+
+		img {
+			border-radius: 10px;
+			width: 100%;
+			object-fit: cover;
+		}
+
+		.swiper-navigation-wrapper {
+			max-width: 296px;
+			margin: 30px auto 0;
+			border-radius: 50px;
+			background: #141414;
+			padding: 10px;
+
+			.swiper-pagination-bullet {
+				width: 20px;
+			}
+
+			.swiper-pagination {
+				width: 140px !important;
+				margin: 0 auto;
+			}
+
+			.swiper-pagination-bullet {
+				background: #4d4d4d;
+			}
+
+			.swiper-pagination-bullet-active {
+				opacity: 1;
+				background: #703bf7;
+			}
+		}
+
+		.thumbnail-gallery {
+			padding: 20px;
+			background: #141414;
+			border-radius: 12px;
+			border: 1px solid #262626;
+			margin-bottom: 30px;
+
+			.swiper-slide {
+				cursor: pointer;
+			}
+		}
+	}
+
+	.key-details {
+		margin-top: 30px;
+
+		.row {
+			gap: 30px;
+
+			& > div {
+				width: 50%;
+				padding: 50px;
+				border-radius: 12px;
+				border: 1px solid #262626;
+
+				h3 {
+					font-size: 24px;
+				}
+			}
+
+			.description {
+				h3 {
+					padding-bottom: 14px;
+				}
+
+				p {
+					padding-bottom: 50px;
+				}
+
+				.description-bottom {
+					gap: 40px;
+					padding-top: 20px;
+					border-top: 1px solid #262626;
+
+					div {
+						width: 33%;
+
+						p {
+							padding-bottom: 10px;
+							gap: 8px;
+						}
+
+						span {
+							font-size: 24px;
+							font-weight: 400;
+							color: #fff;
+						}
+
+						&:not(:first-of-type) {
+							position: relative;
+
+							&::before {
+								content: "";
+								position: absolute;
+								top: 50%;
+								left: -20px;
+								transform: translateY(-50%);
+								width: 1px;
+								height: 100%;
+								background: #262626;
+							}
+						}
+					}
+				}
+			}
+
+			.features {
+				h3 {
+					padding-bottom: 50px;
+				}
+
+				.feature-item {
+					background: linear-gradient(to right, #1a1a1a, rgba(26, 26, 26, 0));
+					padding: 21px 27px;
+					border-left: 1px solid #703bf7;
+					margin-bottom: 30px;
+
+					p {
+						gap: 13px;
+					}
+
+					&:last-of-type {
+						margin-bottom: 0;
+					}
+				}
+			}
+		}
+	}
+}
