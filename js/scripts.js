@@ -11,3 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		document.body.classList.remove("banner-show")
 	})
 })
+        $('.section, section, .single-effect').viewportChecker({
+            classToAdd: 'starteffect',
+            offset: '15%'
+        });

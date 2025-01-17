@@ -199,9 +199,20 @@ p {
 	display: inline-block;
 	color: #ffffff !important;
 	font-size: 18px;
+	border: 1px solid transparent;
+	transition: all 0.3s ease;
 
 	&.cta-secondary {
 		background: #1a1a1a;
+
+		&:hover {
+			background: #703bf7;
+		}
+	}
+
+	&:hover {
+		border-color: #703bf7;
+		background: #141414;
 	}
 
 	@media screen and (max-width: 1440px) {
@@ -228,5 +239,35 @@ p {
 
 	@media screen and (max-width: 991px) {
 		display: block;
+	}
+}
+
+.edit-page-link {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	z-index: 999999;
+	width: 55px;
+	height: 55px;
+	background: #703bf7;
+	border-radius: 50%;
+	color: #fff;
+	font-weight: 700;
+	line-height: 55px;
+	text-align: center;
+	font-size: 24px;
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+
+	&:hover {
+		background: #141414;
+		color: #fff;
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
+		border: 1px solid #fff;
+	}
+
+	&:before {
+		content: "\e206";
+		font-family: "Font Awesome 6 Pro";
 	}
 }

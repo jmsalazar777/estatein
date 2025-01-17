@@ -65,6 +65,7 @@
 
 		nav {
 			ul {
+				gap: 6px;
 				li {
 					transition: all 0.3s ease;
 					border-radius: 10px;
@@ -82,9 +83,13 @@
 						}
 					}
 
-					&:hover,
 					&.current-menu-item {
 						border: 1px solid #262626;
+						background: #141414;
+					}
+
+					&:hover {
+						border-color: #703bf7;
 						background: #141414;
 					}
 				}

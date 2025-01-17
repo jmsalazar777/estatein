@@ -1149,9 +1149,18 @@ p {
   display: inline-block;
   color: #ffffff !important;
   font-size: 18px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
 }
 .cta.cta-secondary {
   background: #1a1a1a;
+}
+.cta.cta-secondary:hover {
+  background: #703bf7;
+}
+.cta:hover {
+  border-color: #703bf7;
+  background: #141414;
 }
 @media screen and (max-width: 1440px) {
   .cta {
@@ -1182,6 +1191,34 @@ p {
   .desktop-hide {
     display: block;
   }
+}
+
+.edit-page-link {
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  z-index: 999999;
+  width: 55px;
+  height: 55px;
+  background: #703bf7;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: 700;
+  line-height: 55px;
+  text-align: center;
+  font-size: 24px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+.edit-page-link:hover {
+  background: #141414;
+  color: #fff;
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  border: 1px solid #fff;
+}
+.edit-page-link:before {
+  content: "\e206";
+  font-family: "Font Awesome 6 Pro";
 }
 
 #banner-section {
@@ -1248,6 +1285,9 @@ p {
 #masthead .site-branding {
   padding: 25.5px 0;
 }
+#masthead .site-branding nav ul {
+  gap: 6px;
+}
 #masthead .site-branding nav ul li {
   transition: all 0.3s ease;
   border-radius: 10px;
@@ -1265,8 +1305,12 @@ p {
     font-size: 14px;
   }
 }
-#masthead .site-branding nav ul li:hover, #masthead .site-branding nav ul li.current-menu-item {
+#masthead .site-branding nav ul li.current-menu-item {
   border: 1px solid #262626;
+  background: #141414;
+}
+#masthead .site-branding nav ul li:hover {
+  border-color: #703bf7;
   background: #141414;
 }
 #masthead .site-branding .cta.cta-secondary {
@@ -2631,6 +2675,158 @@ p {
 }
 .dream-property h2::before {
   display: none;
+}
+
+.happen {
+  padding-bottom: 150px;
+}
+.happen .heading-text {
+  padding-bottom: 80px;
+}
+.happen .content-wrapper {
+  padding: 100px;
+  border-radius: 12px;
+  border: 1px solid #262626;
+}
+.happen .content-wrapper textarea {
+  width: 100%;
+  background: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  padding: 24px 20px;
+  margin-top: 16px;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 500;
+  height: 170px;
+}
+.happen .content-wrapper textarea ::placeholder {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 500;
+}
+.happen .content-wrapper .form-wrapper {
+  margin-bottom: 50px;
+}
+.happen .content-wrapper .form-wrapper p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.happen .content-wrapper .form-wrapper p input,
+.happen .content-wrapper .form-wrapper p select {
+  width: 100%;
+  background: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  padding: 24px 20px;
+  margin-top: 16px;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 500;
+}
+.happen .content-wrapper .form-wrapper p input ::placeholder,
+.happen .content-wrapper .form-wrapper p select ::placeholder {
+  color: #666666;
+  font-size: 18px;
+  font-weight: 500;
+}
+.happen .content-wrapper .form-wrapper p label {
+  width: 25%;
+}
+.happen .content-wrapper .form-wrapper-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.happen .content-wrapper .form-wrapper-2 p {
+  display: block;
+}
+.happen .content-wrapper .form-wrapper-2 > div {
+  width: 100%;
+}
+.happen .content-wrapper .form-wrapper-2 > div span {
+  width: 100%;
+}
+.happen .content-wrapper .form-wrapper-2 > div span .wpcf7-form-control {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+.happen .content-wrapper .form-wrapper-2 > div span .wpcf7-list-item {
+  width: 100%;
+  background: #1a1a1a;
+  border-radius: 8px;
+  border: 1px solid #262626;
+  padding: 24px 20px;
+  margin: 0;
+}
+.happen .content-wrapper .form-wrapper-2 > div span .wpcf7-list-item label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+.happen .content-wrapper .form-wrapper-2 > div span .wpcf7-list-item label input {
+  margin-top: 0;
+  width: 30px;
+}
+.happen .content-wrapper .form-wrapper-2 p {
+  width: 100%;
+}
+.happen .content-wrapper .form-wrapper-2 p label {
+  width: 100%;
+}
+.happen .content-wrapper input[type=submit] {
+  border: 1px solid #262626;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+  padding: 14px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  background: #703bf7;
+  display: inline-block;
+  color: #ffffff !important;
+  font-size: 18px;
+}
+.happen .content-wrapper .cta-wrapper {
+  position: relative;
+  margin-top: 50px;
+}
+.happen .content-wrapper .cta-wrapper p {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #666666;
+  font-size: 18px;
+  font-weight: 500;
+}
+.happen .content-wrapper .cta-wrapper .wpcf7-spinner {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+.happen .content-wrapper .cta-wrapper [type=checkbox] {
+  width: 28px;
+  height: 28px;
+  background: #1a1a1a;
+  border: 1px solid #262626;
+}
+.happen .content-wrapper .cta-wrapper .wpcf7-list-item {
+  margin: 0;
+}
+.happen .content-wrapper .cta-wrapper .wpcf7-list-item label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -85,6 +85,7 @@ $youtube_link = get_field('youtube_link', 'options');
 		</div>
 	</div><!-- .site-info -->
 </footer><!-- #colophon -->
+<?php edit_post_link('', '', '', get_the_ID(), 'edit-page-link'); ?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

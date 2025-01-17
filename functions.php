@@ -225,3 +225,5 @@ function theme_enqueue_scripts()
 	wp_enqueue_script('custom-menu-toggle', get_template_directory_uri() . '/js/header.js', array('jquery'), null, true);
 }
 add_action('wp_enqueue_scripts', 'theme_enqueue_scripts');
+
+add_filter('show_admin_bar', '__return_false');
